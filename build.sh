@@ -1,4 +1,7 @@
 #!/bin/bash
+declare -A SHED_PKG_LOCAL_OPTIONS=${SHED_PKG_OPTIONS_ASSOC}
+SHED_PKG_LOCAL_DOCDIR="/usr/share/doc/${SHED_PKG_NAME}-${SHED_PKG_VERSION}"
+# Configure
 ./configure --prefix=/usr              \
             --with-internal-glib       \
             --disable-host-tool        \
